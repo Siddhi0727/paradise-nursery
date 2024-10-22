@@ -1,0 +1,188 @@
+/* styles.css */
+
+/* General Styles */
+
+
+/* Navigation Bar Styles */
+nav {
+    text-align: right; /* Align text to the right */
+    padding: 15px 20px; /* Add padding to the top/bottom and left/right */
+    background-color: #f8f8f8; /* Optional: add a background color */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items in a row */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+nav li {
+    margin-left: 30px; /* Space between navigation items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Change link color */
+    padding: 5px 10px; /* Add padding around links for better click area */
+}
+
+/* Optional: Change color on hover for better interaction */
+nav a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    background-image: url('./images/landing-bg.png'); /* Add your background image here */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Dim the background */
+    padding: 20px;
+}
+
+.landing-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.landing-page p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.get-started-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.get-started-button:hover {
+    background-color: #218838;
+}
+
+/* Product Listing Styles */
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Shopping Cart Styles */
+.shopping-cart {
+    margin: 20px; /* Add margin around the cart */
+    padding: 20px; /* Add padding inside the cart */
+    border: 1px solid #ddd; /* Optional: add border */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.cart-item {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between item details and actions */
+    margin: 15px 0; /* Space between cart items */
+}
+
+.cart-item img {
+    max-width: 50px; /* Thumbnail size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cart-item button {
+    background-color: #dc3545; /* Red for delete button */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.cart-item button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.total-cost {
+    font-weight: bold; /* Make total cost text bold */
+    margin-top: 20px; /* Space above total cost */
+}
+
+/* Additional Styles */
+button {
+    transition: background-color 0.3s; /* Smooth transition for button hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .product-listing {
+        flex-direction: column; /* Stack product cards vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .product-card {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
